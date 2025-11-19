@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import { GITHUB_REPO_URL } from '../siteData';
 
 // ==========================================
 // SVG LOGO COMPONENT - EDIT HERE
@@ -85,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
           </button>
 
           <a
-            href="https://github.com"
+            href={GITHUB_REPO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-bold rounded-lg hover:opacity-90 transition-all shadow-lg shadow-slate-900/10 dark:shadow-white/10"
@@ -125,11 +126,11 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
             </a>
           ))}
           <a 
-            href="https://github.com"
+            href={GITHUB_REPO_URL}
             target="_blank"
             className="text-lg font-medium text-brand-600 dark:text-brand-400"
           >
-             GitHub Repo
+              GitHub Repo
           </a>
         </div>
       )}
